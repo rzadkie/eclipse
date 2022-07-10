@@ -1,117 +1,135 @@
-@use '../App.scss';
+@use "../App.scss";
 
+.Wrapper2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
 
-.Wrapper2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7));
-  
+#ContactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ContactBox {
+  background-color: App.$black-lighter;
+  width: 60vw;
+  height: 40vw;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-self: flex-start;
+
+  .ContactHeader {
+    height: 9%;
+    margin: 1%;
   }
-  
-  #ContactUs{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+  .FormMain {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 2vw);
+    grid-template-rows: repeat(auto-fill, 11%);
+    align-items: stretch;
+    height: 88%;
   }
-  
-  .FormBox{
-    background-color: App.$black-lighter;
-    min-width: 60vw;
-    min-height: 80vmin;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    align-self: flex-start;
-  
-    .FormMain{
-      display: grid;
-      grid-template-columns: 12vw 12vw 12vw 12vw 12vw ;
-      grid-template-rows:  20vmin 20vmin 20vmin ;
-      align-items: center;
-  
-      
-  
-  
-    }
-    
-  
-    .FormMail{
-      font-family: Arial, Helvetica, sans-serif;
-      grid-row: 2 / 3;
-      grid-column: 1 / 3;
-      
-  
-  
-  
-  
-      .email, .name, .contents{
-        padding: 10px 12px;
-        background: App.$black-basic;
+
+  .ContactSeparator {
+    place-self: center;
+    grid-column: 15 / 17;
+    grid-row: 3;
+  }
+
+  .ContactInfo {
+    grid-column: 20 / end;
+    grid-row: 2;
+    width: 20vw;
+    height: 15vw;
+    .ContactInfoBox {
+      width: 20vw;
+      .ContactInfoTxt {
         color: App.$gray-lighter;
-        border: App.$gray-basic;
-        border-width: 1px;
-        border-style: solid;
-        margin: 5px;
-        min-width: 20vw;
-        min-height: 2vw;
-        font-family: Arial, Helvetica, sans-serif;
+        user-select: all;
         font-size: 20px;
-        resize: none;
-        letter-spacing: 1px;
-        box-sizing: border-box;
-        align-self: center;
-  
-  
-  
-        input {
-          border: none;
+      }
+    }
+  }
+
+  .FormMail {
+    font-family: Arial, Helvetica, sans-serif;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    min-width: 14vw;
+    width: 20vw;
+    grid-row: 2 / 7;
+    grid-column: 2 / 12;
+
+    .email,
+    .name,
+    .contents {
+      padding: 10px 12px;
+      background: App.$black-basic;
+      color: App.$gray-lighter;
+      border: App.$gray-basic;
+      border-width: 1px;
+      border-style: solid;
+      margin: 5px;
+      width: 20vw;
+      min-width: 10vw;
+      min-height: 2vw;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      resize: none;
+      letter-spacing: 1px;
+      box-sizing: border-box;
+
+      input {
+        border: none;
+        background: transparent;
+
+        &:focus {
           background: transparent;
-  
-          &:focus{
-            background: transparent;
-          } 
         }
       }
-  
-      .contents{
-        min-height: 10vw;
     }
-    .send{
-      min-width: 20vw;
+
+    .contents {
+      height: 10vw;
+      min-height: 10vw;
+      min-width: 14vw;
+    }
+    .send {
+      width: 20vw;
+      min-width: 14vw;
       min-height: 2vw;
-      
-      .SendIcon{
+
+      .SendIcon {
         transform: rotate(30deg);
         border: App.$black-basic;
       }
-  
     }
-  
   }
-  
-  }
-  
-  .Contact{
-    background-color: App.$black-lighter;
-    min-width: 20vw;
-    min-height: 80vmin;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 1vw;
-    margin-right: 1vw;  
-    align-self: flex-end;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-  
-  
-  
-  }
-  
-  .Discord{
-    min-height: 75vmin;
-    min-width: 18vw;
-  }
-  
+}
+
+.DiscordBox {
+  background-color: App.$black-lighter;
+  width: 22vw;
+  height: 40vw;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Discord {
+  min-height: 75vmin;
+  min-width: 18vw;
+}

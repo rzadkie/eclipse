@@ -12,10 +12,10 @@ const AboutUs = () => {
 
         <div className='Content' id='AboutUs'>
         <h1>
-            About Us
+            About
           </h1>
           
-            <Carousel className='Carousel' width='90' autoPlay='true' useKeyboardArrows='true' showStatus='false' >
+            <Carousel showThumbs={false} className='Carousel' autoPlay='true' useKeyboardArrows='true' showStatus={false} >
             <div className='CarouselSegment' id='ThemeDescription'>
                 <p>
                   Ov Magic and Forest <br/>

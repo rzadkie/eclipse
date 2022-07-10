@@ -1,8 +1,10 @@
-$black-basic: hsl(0, 0%, 7%);
+$black-basic: hsl(0%, 0%, 7%);
 $black-lighter: hsl(0, 0%, 8%);
-$white-basic: hsl(0, 0, 98);
-$gray-basic: 	hsl(0, 0%, 46%);
-$gray-lighter: hsl(0, 0, 70); 
+$white-basic: hsl(0%, 0%, 98%);
+$gray-basic: hsl(0%, 0%, 46%);
+$gray-lighter: hsl(0%, 0%, 70%);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 // $dimensiosn: (
 //   smartphone: 650px,
@@ -13,16 +15,12 @@ $small: 650px;
 $medium: 750px;
 $desktop: 1024px;
 
-
-
-
-@media screen and (max-width: $medium){
-  .Icon{
+@media screen and (max-width: $medium) {
+  .Icon {
     height: 200px;
     width: 200px;
   }
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -42,24 +40,24 @@ $desktop: 1024px;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
-h1,h2,h4,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
   margin-block-start: 1em;
   margin-block-end: 1em;
-  font-family: 'Bebas Neue', cursive;
-
-
+  font-family: "Bebas Neue", cursive;
 }
 
-  
-
-%ContentBox{
+%ContentBox {
   min-height: 100vh;
   align-content: center;
   font-size: calc(10px + 2vmin);
@@ -70,38 +68,36 @@ h1,h2,h4,h4,h5 {
   flex-direction: column;
 }
 
-.Icon{
+.Icon {
   align-self: center;
   transform: scale(80%);
-  
+
   height: 10vmin;
   width: 10vmin;
 }
 
-.BtnMain{
-    display: flex;
-    flex-direction: column;
-    margin: 2vmin;
-    background-color: $white-basic;
-    height: 14vmin;
-    width: 14vmin;
-    border-radius: 50%;
-    align-self: center;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    color: #121212;
-    font-size: 120%;
-    transform: scale(100%);
-    transition: transform 1s;
-    cursor: pointer;
-  
-  }
-  .BtnMain:active{
-  
-  }
+.BtnMain {
+  display: flex;
+  flex-direction: column;
+  margin: 2vmin;
+  background-color: $white-basic;
+  height: 14vmin;
+  width: 14vmin;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  color: #121212;
+  font-size: 120%;
+  transform: scale(100%);
+  transition: transform 1s;
+  cursor: pointer;
+}
+.BtnMain:active {
+}
 
-.SmallCircle{
+.SmallCircle {
   height: 4vmin;
   width: 4vmin;
   border-radius: 50%;
@@ -116,28 +112,23 @@ h1,h2,h4,h4,h5 {
   opacity: 100%;
   transition: opacity 2s;
   cursor: pointer;
-
 }
 
-.hideBtn{
+.hideBtn {
   //display: none;
   opacity: 0;
   transition: opacity 1s;
 }
 
-#chevron{
+#chevron {
   justify-self: center;
   align-self: center;
-  overflow:visible;
-
-  
+  overflow: visible;
 }
-
 
 // .Pentagram {
 //   transform: scale(200%);
 //   align-self: center;
-  
 
 // }
 
@@ -145,8 +136,6 @@ h1,h2,h4,h4,h5 {
   text-align: center;
   background-color: $black-basic;
   font-family: Arial, Helvetica, sans-serif;
-  
-
 }
 
 .App-logo {
@@ -155,37 +144,32 @@ h1,h2,h4,h4,h5 {
   margin: 2vmin;
   //animation: App-logo-spin 4s  3s;
   margin-top: 10vmin;
-
 }
-
-
 
 .App-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.65)) , url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Total_solar_eclipse_ESA425433.jpg/2560px-Total_solar_eclipse_ESA425433.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)),
+    url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Total_solar_eclipse_ESA425433.jpg/2560px-Total_solar_eclipse_ESA425433.jpg);
   min-height: 100vh;
-  background-position: center
-
-
+  background-position: center;
 }
 
-.Navbar{
+.Navbar {
   min-width: 100vw;
   max-height: 3vw;
   min-height: 30px;
   background-color: rgba(34, 34, 34, 0.281);
 }
 
-.Content{
-@extend %ContentBox;
+.Content {
+  @extend %ContentBox;
 }
 
-.SpacerContainer{
+.SpacerContainer {
   display: flex;
   flex-direction: column;
   align-self: center;
   width: 100vmin;
   height: 2vmin;
-
 }
 // #endSpacer{
 //   align-self: center;
@@ -193,37 +177,31 @@ h1,h2,h4,h4,h5 {
 
 // }
 
-.Spacer{
+.Spacer {
   background-color: $white-basic;
   height: 0.8vmin;
   width: 100vmin;
-  border-radius:90%;
+  border-radius: 90%;
   align-self: center;
   filter: drop-shadow(20px);
 }
 
-.ButtonContainer{
+.ButtonContainer {
   display: flex;
   flex-direction: row;
   justify-self: center;
   align-self: center;
   margin-top: 8vmin;
-
 }
 
-
-.BtnMain:hover{
+.BtnMain:hover {
   //animation: buttonHover 1s ease-in-out;
   transition: transform 1s ease-in-out;
   transform: scale(105%);
 }
 
-
-
-
-
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,

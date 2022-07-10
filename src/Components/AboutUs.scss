@@ -1,37 +1,33 @@
-@use '../App.scss';
+@use "../App.scss";
 
-.Wrapper1{
+.Wrapper1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.65)),
+    url(https://cdn.pixabay.com/photo/2016/01/31/21/41/forest-1172278_1280.jpg);
+}
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.65)) , url(https://cdn.pixabay.com/photo/2016/01/31/21/41/forest-1172278_1280.jpg);
-  }
-  
-  #AboutUs{
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-  }
+#AboutUs {
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+}
 
-  .Carousel{
-    max-width: 90vw;
-    max-height: 70vh;
+.Carousel {
+  max-width: 90vw;
+  max-height: 70vh;
+}
 
-  }
+.CarouselSegment {
+  align-items: center;
+  height: 70vh;
+  background-color: rgba($color: App.$black-basic, $alpha: 0.3);
+  border-radius: 5px;
+  margin: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
-  .CarouselSegment{
-    align-items: center;
-      height: 70vh;
-      background-color: rgba($color: App.$black-basic, $alpha: 0.3);
-      border-radius: 5px;
-      margin: 5px;
-      margin-right: 10px;
-      margin-left: 10px;
-
-
-
-  }
-
-  .carousel-status{
-    display: none;
-  }
-  #UsDescription{
-  }
+.carousel-status {
+  display: none;
+}
+#UsDescription {
+}

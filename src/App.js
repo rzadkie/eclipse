@@ -19,14 +19,14 @@ function App() {
             logo, [
                 { transform: `translateY(-100%)`, opacity: `0%` },
                 { transform: 'translateY(0%)', opacity: `100%` }
-            ], { duration: 2000, fill: 'forwards', easing: 'ease-in-out' }
+            ], {duration: 2000, fill: 'forwards', easing: 'ease-in-out'}
         )
 
         const fadeIn = new KeyframeEffect(
             spacer, [
                 { opacity: `0%` },
                 { opacity: `100%` }
-            ], { duration: 2000, fill: 'forwards', easing: 'ease-in-out' }
+            ], {duration: 2000, fill: 'forwards', easing: 'ease-in-out'}
         )
 
 
@@ -34,7 +34,7 @@ function App() {
             container, [
                 { transform: `translateY(150%)`, opacity: `0%` },
                 { transform: 'translateY(0%)', opacity: `100%` }
-            ], { duration: 2000, fill: 'forwards', easing: 'ease-in-out' }
+            ], {duration: 2000, fill: 'forwards', easing: 'ease-in-out'}
         )
 
         const moveInDownAnim = new Animation(moveInDown, document.timeline);
@@ -95,8 +95,8 @@ function App() {
 
         </div> 
         <nav className='ButtonContainer' id ='ButtonContainer' >
-        <div className='BtnMain' alt="lear more about us" onClick={() => document.getElementById('AboutUs').scrollIntoView({ behavior: 'smooth' }) }>
-        <h5> About Us </h5> 
+        <div className='BtnMain' alt="learn more about us" onClick={() => document.getElementById('AboutUs').scrollIntoView({ behavior: 'smooth' }) }>
+        <h5> About </h5> 
         </div >
         <a href ='https://www.youtube.com/' target='_blank'> <div className='BtnMain' alt="listen on youtube"> <img className='Icon' src = {youtube}/></div> </a> 
         <a href = 'https://www.youtube.com/' target='_blank'> <div className='BtnMain' alt="listen on spotify"> <img className = 'Icon' src={spotify}/></div> </a>
