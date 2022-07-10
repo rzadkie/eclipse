@@ -1,8 +1,7 @@
 import '../App.scss';
 import './ContactUs.scss';
 import send from '../send.svg';
-import phone from '../phone.svg';
-import mail from '../mail.svg';
+
 
 const MailIcon = (props) => (
     <svg width="24" height="24" fill="props.fill" className='props.class' viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
