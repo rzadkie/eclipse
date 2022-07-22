@@ -1,6 +1,7 @@
 import '../App.scss';
 import './ContactUs.scss';
 import send from '../send.svg';
+import Discord from './Discord/Discord';
 
 
 const MailIcon = (props) => (
@@ -44,8 +45,7 @@ const ContactUs = () => {
         </div> 
         <div className = 'DiscordBox' >
         <h3> Our Grim and Frostbitten Discord </h3>
-        <div className='Discord'> </div>
-        {/* <iframe className = 'Discord' src = "https://discord.com/widget?id=354989172055867404&theme=dark" allowtransparency = "true" frameborder = "0" sandbox = "allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"> </iframe> </div> */}
+        <Discord/>
 
         
         </div> 

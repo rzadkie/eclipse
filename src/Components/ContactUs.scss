@@ -115,6 +115,9 @@
 }
 
 .DiscordBox {
+  h3 {
+    margin: 10px 0px 15px 0px;
+  }
   background-color: App.$black-lighter;
   width: 22vw;
   height: 40vw;
@@ -123,13 +126,13 @@
   margin-left: 1vw;
   margin-right: 1vw;
   align-self: flex-end;
-  display: flex;
+  overflow: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .Discord {
-  min-height: 75vmin;
-  min-width: 18vw;
+  height: 40vw;
+  width: 18vw;
 }

@@ -1,0 +1,79 @@
+@use "../../App.scss";
+
+.MembersAndChannels {
+}
+.MemebrList {
+}
+
+.ChannelList {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.Widget {
+    height: 90%;
+    overflow: scroll;
+    place-items: center;
+
+    .Header {
+        height: 4vw;
+        display: flex;
+        place-content: center;
+        background-color: App.$black-basic;
+        position: sticky;
+        top: 0;
+        margin: 0px 1vw 0px 1vw;
+        p{
+            margin: 0;
+            align-self: center;
+            justify-self: center;
+
+        }
+        .Presence_Count{
+            justify-self: flex-end;
+
+        }
+
+    }
+}
+.PreBoard {
+    height: 100%;
+}
+
+.Presence_Count {
+    background-color: App.$white-basic;
+    width: 2vw;
+    height: 2vw;
+    color: App.$black-basic;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    font-family: Montserrat, sans-serif;
+    border-radius: 50%;
+}
+
+.Channel {
+    .Name {
+        font-size: 25px;
+        margin: 15px 0px 15px 2px;
+    }
+    background-color: App.$black-basic;
+    border-radius: 2%;
+    width: 90%;
+    height: 4%;
+    margin: 5px 0px 5px 2px;
+}
+
+.User {
+    display: flex;
+    margin-left: 15px;
+    .Nickname {
+        font-size: 20px;
+        margin: 5px 0px 5px 2px;
+    }
+    .Avatar {
+        border-radius: 50%;
+        width: 1vw;
+        height: 1vw;
+    }
+}
