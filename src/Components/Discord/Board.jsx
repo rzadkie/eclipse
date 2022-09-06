@@ -17,8 +17,7 @@ const Board = ({name, channels, members, id, instant_invite, presence_count}) =>
         {!channels ? <Skeleton/> : channelArr.concat(channels)
                 .sort((a, b) => a.position > b.position ? 1 : -1)
                 .map((channel, i) => {
-                const {id, name, position} = channel
-                return <Channel key={i} channel_id={id} name={name} postion={position} members={members}/>
+                return <Channel key={i} channel_id={channel.id} name={channel.name} postion={channel.position} members={members}/>
         })}
         </div>
             <div className="MemberList">
