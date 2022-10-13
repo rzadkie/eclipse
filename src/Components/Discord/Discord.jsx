@@ -11,7 +11,7 @@ const Discord = () => {
             mode: 'cors',
             cache: 'reload'
         }
-            const discordData = await fetch('https://discord.com/api/guilds/354989172055867404/widget.json', init);
+            const discordData = await fetch('https://discord.com/api/guilds/1030261219019464764/widget.json', init);
             let discordDataJson = await discordData.json();
             return discordDataJson;
         }

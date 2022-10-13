@@ -37,8 +37,25 @@ const ContactUs = () => {
             <div className='ContactInfo'>
                 <h4>do it by yourself</h4>
                 <div className='ContactInfoBox'>
-                <p className='ContactInfoTxt'> <MailIcon stroke='white'/> mail@mail.com</p>
-                <p className='ContactInfoTxt'> <PhoneIcon stroke="white"/> 69202137</p>
+                <div className='ContactInfoBoxChild'>
+                <MailIcon stroke='white'/> 
+                <p className='ContactInfoTxt' onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    navigator.clipboard.writeText(e.target.textContent);
+                    
+                }}> 
+                mail@mail.com</p>
+                </div>
+                <div className='ContactInfoBoxChild'>
+                <PhoneIcon stroke="white"/>
+                <p className='ContactInfoTxt' onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    navigator.clipboard.writeText(e.target.textContent);
+                }}>  69202137</p>
+                </div>
+
                 </div>
             </div>
         </div> 
